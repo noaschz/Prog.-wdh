@@ -5,20 +5,15 @@ package praxisaufgaben
 // gemeinsamen Vielfachen von m und n, die nicht größer als max sind.
 func CommonMultiples(m, n, max int) []int {
 
+	var Vielfachen []int
 
-
-
-
-
+	for i := 1; i <= max; i++ {
+		if i%m == 0 && i%n == 0 {
+			Vielfachen = append(Vielfachen, i)
+		}
+	}
+	return Vielfachen
 }
-
-
-
-
-
-
-
-
 
 /*
 result := []int{}
